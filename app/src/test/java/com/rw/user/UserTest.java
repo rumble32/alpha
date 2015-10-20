@@ -40,7 +40,7 @@ public class UserTest {
 		User user = new User();
 		user.setFirstName("tag");
 		user.setLastName("zhang");
-		user.setPhoneNumber(phoneNumber);
+		user.setPhone(phoneNumber);
 		userRepository.save(user);
 	}
 
@@ -53,7 +53,7 @@ public class UserTest {
 		User user = new User();
 		user.setFirstName("tag");
 		user.setLastName("zhang");
-		user.setPhoneNumber(phoneNumber);
+		user.setPhone(phoneNumber);
 		userRepository.save(user);
 	}
 	
@@ -66,7 +66,7 @@ public class UserTest {
 		
 		String firstName = "foo";
 		
-		User user = userRepository.findByPhoneNumber(phoneNumber);
+		User user = userRepository.findByPhone(phoneNumber);
 		user.setFirstName(firstName);
 		user = userRepository.save(user);
 		assertEquals(firstName, user.getFirstName());

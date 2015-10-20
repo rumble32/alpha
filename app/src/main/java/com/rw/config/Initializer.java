@@ -63,14 +63,6 @@ public class Initializer extends SpringBootServletInitializer {
 		return registration;
 	}
 
-//	@Bean
-//    @Order(Ordered.HIGHEST_PRECEDENCE)
-//    CharacterEncodingFilter characterEncodingFilter() {
-//        CharacterEncodingFilter filter = new CharacterEncodingFilter();
-//        filter.setEncoding("UTF-8");
-//        filter.setForceEncoding(true);
-//        return filter;
-//    }
 	
 	// @Bean
 	// public FilterRegistrationBean filterRegistrationBean () {

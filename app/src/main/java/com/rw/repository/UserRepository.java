@@ -8,7 +8,7 @@ import com.rw.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long>  {
 
-	User findByPhoneNumber(@Param("phone") String phone);
+	User findByPhone(@Param("phone") String phone);
 	
 	//@Query("select u from #{#entityName} u where u.lastname = ?1")
 	//List<User> findByLastname(String lastname);

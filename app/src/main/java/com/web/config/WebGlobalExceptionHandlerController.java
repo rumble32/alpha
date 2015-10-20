@@ -14,15 +14,15 @@ public class WebGlobalExceptionHandlerController {
 
 	private static final Logger logger = LoggerFactory.getLogger(WebGlobalExceptionHandlerController.class);
 	
-	@ExceptionHandler(value = Exception.class)  
-	public ModelAndView handleException(HttpServletRequest request, Exception exception) throws Exception {
-		
-		logger.info("exception = " + exception.toString());
-		
-		ModelAndView andView = new ModelAndView();
-		andView.setViewName("error");
-		return andView;
-	}
+	//@ExceptionHandler(value = Exception.class)  
+//	public ModelAndView handleException(HttpServletRequest request, Exception exception) throws Exception {
+//		
+//		logger.info("exception = " + exception.toString());
+//		
+//		ModelAndView andView = new ModelAndView();
+//		andView.setViewName("error");
+//		return andView;
+//	}
 	
 	@ExceptionHandler(value = NoHandlerFoundException.class)  
 	public ModelAndView handleNoHandlerFoundException(HttpServletRequest request, NoHandlerFoundException exception) throws Exception {
